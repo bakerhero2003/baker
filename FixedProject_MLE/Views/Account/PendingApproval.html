@@ -1,0 +1,46 @@
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(45deg, #8500ff, #5acaff);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+        .approval-box {
+            background: rgba(255,255,255,0.9);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+            max-width: 500px;
+            color: #333;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        .checkmark {
+            font-size: 80px;
+            color: #4CAF50;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="approval-box">
+        <div class="checkmark">✓</div>
+        <h1>Registration Successful!</h1>
+        <p>Your account is pending approval by an administrator.</p>
+        <p>You'll receive an email when your account is approved.</p>
+        <a href="/Account/Login" style="color: #8500ff; text-decoration: none;">← Back to Login</a>
+    </div>
+</body>
+</html>

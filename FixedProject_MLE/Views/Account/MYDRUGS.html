@@ -1,0 +1,21 @@
+<h2>Connexion</h2>
+<form id="loginForm" method="post" asp-action="Login" asp-controller="Account">
+    <input type="email" name="email" placeholder="Adresse email" required>
+    <input type="password" name="password" placeholder="Mot de passe" required>
+    <button type="submit">Se connecter</button>
+</form>
+<div class="toggle-form">
+    Vous n'avez pas de compte ? <span id="showRegister">S'inscrire</span>
+</div>
+<h2>Inscription</h2>
+<form id="registerForm" method="post" asp-action="Register" asp-controller="Account">
+    <input type="text" name="fullName" placeholder="Nom complet" required>
+    <input type="email" name="email" placeholder="Adresse email" required>
+    <input type="password" name="password" placeholder="Mot de passe" required>
+    <input type="password" name="confirmPassword" placeholder="Confirmer le mot de passe" required>
+    <button type="submit">S'inscrire</button>
+</form>
+<div class="toggle-form">
+    Vous avez déjà un compte ? <span id="showLogin">Se connecter</span>
+</div>
+
